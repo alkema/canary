@@ -1,0 +1,20 @@
+gemfile: .overcommit_gems.rb
+
+CommitMsg:
+  ALL:
+    on_warn: fail
+
+  TextWidth:
+    enabled: true
+    max_subject_width: 72
+
+PreCommit:
+  TrailingWhitespace:
+    enabled: true
+
+  RuboCop:
+    enabled: true
+    on_warn: fail
+
+  BundleCheck:
+    enabled: true

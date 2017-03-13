@@ -1,0 +1,8 @@
+inherit_gem:
+  zozi_linters:
+    - configs/rubocop/default.yml
+
+Style/FileName:
+  Exclude:
+    - 'Gemfile'
+    - '.overcommit_gems.rb'

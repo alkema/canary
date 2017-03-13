@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+bundle install --gemfile=.overcommit_gems.rb
+overcommit --install
+overcommit --sign
+
+brew install phantomjs
+direnv allow .
+bundle install
+cp .env.example .env
