@@ -68,28 +68,28 @@ point.
 
   In order to add a new acceptance spec follow these guidelines:
 
-    * Place spec in `spec/<APP_NAME>/features`. The convention for the spec location within that
-  directory allows Canary to deduce the app name.
+* Place spec in `spec/<APP_NAME>/features`. The convention for the spec location within that
+directory allows Canary to deduce the app name.
 
-    * Ensure the spec has the following shared context:
+* Ensure the spec has the following shared context:
 
-      ```
-      include_context 'capybara app host'
-      ```
+  ```
+  include_context 'capybara app host'
+  ```
 
-    * Add ENV vars for both the app cluster and app URL.
+* Add ENV vars for both the app cluster and app URL.
 
-      ```
-      CANARY_GOOGLE_CLUSTER=foo
-      CANARY_GOOGLE_URL=https://example.com
-      ```
+  ```
+  CANARY_GOOGLE_CLUSTER=foo
+  CANARY_GOOGLE_URL=https://example.com
+  ```
 
-      Note: Any other needed variables, like username and password can be passed into the spec via an
-      environment variable too. e.g. `CANARY_COOLAPP_PASSWORD=awes`. This variable is accessible in the spec via:
+  Note: Any other needed variables, like username and password can be passed into the spec via an
+  environment variable too. e.g. `CANARY_COOLAPP_PASSWORD=awes`. This variable is accessible in the spec via:
 
-      ```
-      Canary.config.coolapp_password
-      ```
+  ```
+  Canary.config.coolapp_password
+  ```
 
 4. Run the bin script
 
