@@ -8,6 +8,8 @@ two notifications available are:
 * [Amazon CloudWatch](https://aws.amazon.com/cloudwatch)
 * [Slack Incoming Webhooks](https://api.slack.com/incoming-webhooks)
 
+[![CircleCI](https://circleci.com/gh/zozi/canary.svg?style=svg)](https://circleci.com/gh/zozi/canary)
+
 ## Setup
 
 1. Install, setup [direnv](https://direnv.net/)
@@ -96,3 +98,7 @@ directory allows Canary to deduce the app name.
   ```
   bundle exec canary
   ```
+
+## License
+
+Canary is released under the [MIT License](http://www.opensource.org/licenses/MIT).
