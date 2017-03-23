@@ -26,7 +26,7 @@ Gem::Specification.new do |spec|
       'public gem pushes.'
   end
 
-  s.license = 'MIT'
+  spec.license = 'MIT'
 
   spec.files =
     `git ls-files -z`.split("\x0").reject do |f|
