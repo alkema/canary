@@ -7,14 +7,14 @@ require 'canary/version'
 Gem::Specification.new do |spec|
   spec.name = 'canary'
   spec.version = Canary::VERSION
-  spec.authors = ['ZOZI Dev']
-  spec.email = ['dev@zozi.com']
+  spec.authors = ['Jody Alkema']
+  spec.email = ['jody@alkema.ca']
 
   spec.summary = 'Rspec for monitoring'
   spec.description = 'Canary is a library that makes it simple to write Capybara feature tests' \
   'for any website that can be used for monitoring. The output from an Rspec run can then be' \
   'used for notifications etc. Currently Slack and AWS CloudWatch are supported.'
-  spec.homepage = 'https://github.com/zozi/canary'
+  spec.homepage = 'https://github.com/alkema/canary'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
@@ -42,11 +42,11 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'poltergeist'
   spec.add_runtime_dependency 'slack-notifier'
   spec.add_runtime_dependency 'virtus'
-  spec.add_runtime_dependency 'rspec', '3.5.0'
+  spec.add_runtime_dependency 'rspec', '3.9.0'
 
-  spec.add_development_dependency 'bundler', '~> 1.14'
+  spec.add_development_dependency 'bundler'
   spec.add_development_dependency 'byebug'
   spec.add_development_dependency 'climate_control'
-  spec.add_development_dependency 'rake', '~> 10.0'
-  spec.add_development_dependency 'rspec', '3.5.0'
+  spec.add_development_dependency 'rake'
+  spec.add_development_dependency 'rspec', '3.9.0'
 end
