@@ -8,8 +8,6 @@ two notifications available are:
 * [Amazon CloudWatch](https://aws.amazon.com/cloudwatch)
 * [Slack Incoming Webhooks](https://api.slack.com/incoming-webhooks)
 
-[![CircleCI](https://circleci.com/gh/zozi/canary.svg?style=svg)](https://circleci.com/gh/zozi/canary)
-
 ## Setup
 
 1. Install, setup [direnv](https://direnv.net/)
@@ -49,7 +47,7 @@ variable, for example to use both of them the setting would like:
   `CANARY_SLACK_WEBHOOK_URL`.
 
 In order to add a notifier that does not exist, the code
-[here](https://github.com/zozi/canary/tree/master/lib/canary/notifiers) will provide a good starting
+[here](https://github.com/alkema/canary/tree/master/lib/canary/notifiers) will provide a good starting
 point.
 
 ## Usage
@@ -57,7 +55,7 @@ point.
 1. Add canary to a repo's Gemfile
 
   ```
-  gem 'canary', git: 'git@github.com:zozi/canary.git'
+  gem 'canary', git: 'git@github.com:alkema/canary.git'
   ```
 
 2. Create a spec directory
